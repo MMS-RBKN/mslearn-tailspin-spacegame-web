@@ -31,8 +31,7 @@ steps:
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
 
-- bash: |
-    set -x
+- bash: >
     echo "Variante mit bash, um was rauszuschreiben"
     echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt
   displayName: 'Write build info NR. 2'
