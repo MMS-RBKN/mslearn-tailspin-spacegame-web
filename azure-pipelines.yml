@@ -32,8 +32,9 @@ steps:
   workingDirectory: $(wwwrootDir)
 
 - bash: >+
-    echo "Variante mit bash, um was rauszuschreiben";
-    echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt
+    echo "Variante mit bash, um was rauszuschreiben"
+    echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt;
+    echo "Ergebnis Skript ist $?"
   failOnStderr: true
   name: WritebuildIinfoNR_2
 
