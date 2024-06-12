@@ -31,10 +31,10 @@ steps:
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
 
-- script: >+
-    echo "Variante mit bash, um was rauszuschreiben";
+- bash: >+
+    echo "Variante mit bash, um was rauszuschreiben"
     echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt
-
+  failOnStderr: true
   name: 'Write build info NR. 2'
 
 - task: DotNetCoreCLI@2
