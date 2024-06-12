@@ -25,7 +25,7 @@ steps:
   displayName: 'Compile Sass assets'
 
 - task: gulp@1
-  name: 'Run gulp tasks'
+  name: RunGulpTasks
 
 - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
   displayName: 'Write build info'
@@ -35,7 +35,7 @@ steps:
     echo "Variante mit bash, um was rauszuschreiben"
     echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt
   failOnStderr: true
-  name: 'Write build info NR. 2'
+  name: WritebuildIinfoNR_2
 
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
