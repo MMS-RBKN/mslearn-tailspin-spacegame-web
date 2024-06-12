@@ -34,6 +34,8 @@ steps:
 - bash: "
     echo \"Variante mit bash, um was rauszuschreiben\" \n
     echo \"Variante mit bash, um was rauszuschreiben\"
+
+    echo \"Variante mit bash, um was rauszuschreiben\"
     "        
   failOnStderr: true
   name: WritebuildIinfoNR_2
