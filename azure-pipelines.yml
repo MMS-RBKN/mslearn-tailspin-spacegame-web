@@ -31,8 +31,10 @@ steps:
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
 
-- bash: "echo \"Variante mit bash, um was rauszus\\nchreiben\"
-         echo \"Variante mit bash, um was rauszuschreiben\""        
+- bash: "
+    echo \"Variante mit bash, um was rauszuschreiben\" \n
+    echo \"Variante mit bash, um was rauszuschreiben\"
+    "        
   failOnStderr: true
   name: WritebuildIinfoNR_2
 
